@@ -28,8 +28,8 @@ app.listen(port, () => {
 })
 
 app.post('/profile', upload.single('avatar'), function (req, res, next) {
-  // req.file is the `avatar` file
-  // req.body will hold the text fields, if there were any
+
+      res.send("<p><span style=\"border: solid 2px sandybrown;margin: 20px;padding: 10px;font-family: sans-serif;\"> Upload successful! </span> </p>") ; 
 })
 
 app.post('/photos/upload', upload.array('photos', 12), function (req, res, next) {
